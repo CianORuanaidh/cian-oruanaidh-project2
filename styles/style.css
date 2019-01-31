@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Chathura:400,700|Tulpen+One");
+@import url("https://use.fontawesome.com/releases/v5.7.0/css/all.css");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -132,5 +134,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  font-family: 'Courier New', Courier, monospace; }
+h1 {
+  color: tomato;
+  font-family: 'Tulpen One', cursive;
+  font-family: 'Chathura', sans-serif; }
