@@ -1,7 +1,9 @@
 $background-color: #111010;
+$background-color-2: #220303;
 $highlight-color: #ffffff;
 $primary-color: #bf2603;
 $second-color: #ff8327;
+
 
 @mixin chathura($size-value, $weight-value) {
     font-family: 'Chathura', sans-serif;
@@ -50,6 +52,24 @@ a {
 
 .flex {
     display: flex;
+    flex-direction: row;
+}
+
+.v-flex {
+    display: flex;
+    flex-direction: column;    
+}
+
+.col-reverse-flex {
+    flex-direction: column-reverse;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 p, .button-link {
@@ -70,5 +90,10 @@ p, .button-link {
     text-transform: capitalize;
     width: 200px;
     text-align: center;
+    padding: 10px;
+    display: inline-block;
+}
+
+.button-link a {
     padding: 10px;
 }

@@ -1,7 +1,6 @@
-.wrap {
-    flex-wrap: wrap;
+section {
+    padding: 50px 0;
 }
-
 .info-box {
     // border: 1px solid white;
     // width: 50%;
@@ -42,4 +41,40 @@ main h2 {
 
 .host .button-link {
     margin: 0 auto;
+}
+
+.four-part-grid {
+    // background: white;
+    flex: 0 1 700px;
+}
+
+figure {
+    // width: 40%;
+    flex-basis: 500px;
+    flex-grow: 1;
+    // flex-shrink: 0;
+    max-width: 700px;
+    // min-width: 500px;
+}
+
+.fig-contain {
+    background: $background-color-2;
+    background: linear-gradient(to bottom, black 0%, black 10%, $background-color-2 10%, $background-color-2 90%,black 90% ,black 100%);
+}
+
+figcaption h2 {
+    // margin: 0;
+    line-height: 50%;
+}
+
+.fig-contain figure:nth-of-type(1) figcaption {
+    // background: tomato;
+    text-align: right;
+    padding: 15% 0 15% 15%;
+}
+
+.fig-contain figure:nth-of-type(2) figcaption {
+    // background: white;
+    // text-align: right;
+    padding: 15% 15% 15% 0;
 }

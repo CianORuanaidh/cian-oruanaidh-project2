@@ -164,7 +164,35 @@ a {
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.v-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.col-reverse-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse; }
+
+.wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 p, .button-link {
   font-family: 'Chathura', sans-serif;
@@ -185,6 +213,10 @@ p, .button-link {
   text-transform: capitalize;
   width: 200px;
   text-align: center;
+  padding: 10px;
+  display: inline-block; }
+
+.button-link a {
   padding: 10px; }
 
 header {
@@ -226,7 +258,7 @@ li .page {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  height: 100%; }
+  height: calc(100% - 110px); }
 
 h1 {
   font-family: 'Tulpen One', cursive;
@@ -248,9 +280,17 @@ h1,
 h2 {
   margin: 0 auto; }
 
-.wrap {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+.head-two h1 {
+  font-family: 'Chathura', sans-serif;
+  font-size: 5vw;
+  font-weight: bold;
+  color: white; }
+
+footer {
+  text-align: center; }
+
+section {
+  padding: 50px 0; }
 
 .info-box {
   -webkit-box-flex: 1;
@@ -289,3 +329,33 @@ main h2 {
 
 .host .button-link {
   margin: 0 auto; }
+
+.four-part-grid {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 700px;
+  flex: 0 1 700px; }
+
+figure {
+  -ms-flex-preferred-size: 500px;
+  flex-basis: 500px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 700px; }
+
+.fig-contain {
+  background: #220303;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(10%, black), color-stop(10%, #220303), color-stop(90%, #220303), color-stop(90%, black), to(black));
+  background: -webkit-linear-gradient(top, black 0%, black 10%, #220303 10%, #220303 90%, black 90%, black 100%);
+  background: -o-linear-gradient(top, black 0%, black 10%, #220303 10%, #220303 90%, black 90%, black 100%);
+  background: linear-gradient(to bottom, black 0%, black 10%, #220303 10%, #220303 90%, black 90%, black 100%); }
+
+figcaption h2 {
+  line-height: 50%; }
+
+.fig-contain figure:nth-of-type(1) figcaption {
+  text-align: right;
+  padding: 15% 0 15% 15%; }
+
+.fig-contain figure:nth-of-type(2) figcaption {
+  padding: 15% 15% 15% 0; }
