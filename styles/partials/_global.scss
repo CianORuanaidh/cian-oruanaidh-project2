@@ -1,5 +1,74 @@
-h1 {
-    color:tomato;
-    font-family: 'Tulpen One', cursive;
+$background-color: #111010;
+$highlight-color: #ffffff;
+$primary-color: #bf2603;
+$second-color: #ff8327;
+
+@mixin chathura($size-value, $weight-value) {
     font-family: 'Chathura', sans-serif;
+    font-size: $size-value;
+    font-weight: $weight-value;
+}
+
+@mixin tulpen($size-value, $weight-value) {
+    font-family: 'Tulpen One', cursive;
+    font-size: $size-value;
+    font-weight: $weight-value;
+}
+
+html {
+    font-size: 125%;
+}
+
+body {
+    background: $background-color;
+    color: $highlight-color;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.wrapper {
+    width: 80%;
+}
+
+.wrapper, .wrapper-full-width {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+p, .button-link {
+    @include chathura(1.95rem, auto);
+    line-height: 1.5rem;
+}
+
+.bg-shadow-right {
+    box-shadow: 20px 20px 0px 0px $second-color;
+}
+
+.bg-shadow-left {
+    box-shadow: -20px 20px 0px 0px $second-color;
+}
+
+.button-link {
+    background: $second-color;
+    text-transform: capitalize;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
 }

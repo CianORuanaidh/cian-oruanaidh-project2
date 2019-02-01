@@ -1,0 +1,59 @@
+header {
+    background: black;
+    background: url('../assets/home-image-1.jpg');
+    height: 50vh;
+}
+
+header.home {
+    height: 100vh;
+}
+nav ul {
+    color: white;
+    justify-content: center;
+    @include chathura(1.9rem, bold);
+    line-height: 1.5rem;
+    letter-spacing: 0.063rem;
+}
+
+nav li {
+    padding: 0 10px;
+}
+
+nav li:nth-of-type(3) {
+    // font-size: 3rem;
+    @include tulpen(3rem, auto)
+}
+
+li .page {
+    color: $second-color;
+}
+
+.hero {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+h1 {
+    @include tulpen(16vw, auto);
+    line-height: 70%;
+    color: $second-color;
+    width: 27%;
+}
+
+header h2 {
+    @include chathura(5vw, bold);
+    line-height: 30%;
+    width: 27%;
+    padding-left: 0.5%;
+}
+
+h1,
+h2 {
+    margin: 0 auto;
+}
+
+
+
+

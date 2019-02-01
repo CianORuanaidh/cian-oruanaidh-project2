@@ -1,0 +1,45 @@
+.wrap {
+    flex-wrap: wrap;
+}
+
+.info-box {
+    // border: 1px solid white;
+    // width: 50%;
+    flex: 1 0 500px;
+    position: relative;
+    padding-left: 70px;
+}
+
+figure {
+    flex: 1 0 500px;
+}
+
+.info-box .icon {
+    background: $second-color;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    // padding: 2%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 12px;
+}
+
+main h2 {
+    @include chathura(3.5rem, bold)
+}
+
+.host {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.host h2 {
+    color: $second-color;
+}
+
+.host .button-link {
+    margin: 0 auto;
+}
