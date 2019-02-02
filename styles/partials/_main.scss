@@ -58,7 +58,7 @@ figure {
 }
 
 .fig-contain {
-    background: $background-color-2;
+    // background: $background-color-2;
     background: linear-gradient(to bottom, black 0%, black 10%, $background-color-2 10%, $background-color-2 90%,black 90% ,black 100%);
 }
 
@@ -77,4 +77,41 @@ figcaption h2 {
     // background: white;
     // text-align: right;
     padding: 15% 15% 15% 0;
+}
+
+.push-right {
+    padding: 0 0 15% 2.5%;
+}
+
+.push-left {
+    padding: 0 2.5% 15% 0;
+}
+
+.blog-img {
+    margin-left: 18px;
+}
+ .blog-img img {
+    box-shadow: -20px 0px 0px 0px $second-color;
+ }
+
+.blog-post {
+    border: 5px $second-color solid;
+    border-right: 0;
+    border-top: 0;
+}
+
+.text-box {
+    padding: 10%;
+}
+
+.text-box > h2 {
+    line-height: 100%;
+    margin-bottom: 5px;    
+}
+
+h3 {
+    color: $second-color;
+    margin-top: 0;
+    @include chathura(5vw, bold);
+    line-height: 30%;
 }

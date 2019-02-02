@@ -170,6 +170,12 @@ a {
   -ms-flex-direction: row;
   flex-direction: row; }
 
+.row-reverse-flex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
 .v-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,6 +205,9 @@ p, .button-link {
   font-size: 1.95rem;
   font-weight: auto;
   line-height: 1.5rem; }
+
+p {
+  letter-spacing: 0.07rem; }
 
 .bg-shadow-right {
   -webkit-box-shadow: 20px 20px 0px 0px #ff8327;
@@ -284,7 +293,9 @@ h2 {
   font-family: 'Chathura', sans-serif;
   font-size: 5vw;
   font-weight: bold;
-  color: white; }
+  color: white;
+  width: 80%;
+  margin: 1% auto; }
 
 footer {
   text-align: center; }
@@ -344,7 +355,6 @@ figure {
   max-width: 700px; }
 
 .fig-contain {
-  background: #220303;
   background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(10%, black), color-stop(10%, #220303), color-stop(90%, #220303), color-stop(90%, black), to(black));
   background: -webkit-linear-gradient(top, black 0%, black 10%, #220303 10%, #220303 90%, black 90%, black 100%);
   background: -o-linear-gradient(top, black 0%, black 10%, #220303 10%, #220303 90%, black 90%, black 100%);
@@ -359,3 +369,36 @@ figcaption h2 {
 
 .fig-contain figure:nth-of-type(2) figcaption {
   padding: 15% 15% 15% 0; }
+
+.push-right {
+  padding: 0 0 15% 2.5%; }
+
+.push-left {
+  padding: 0 2.5% 15% 0; }
+
+.blog-img {
+  margin-left: 18px; }
+
+.blog-img img {
+  -webkit-box-shadow: -20px 0px 0px 0px #ff8327;
+  box-shadow: -20px 0px 0px 0px #ff8327; }
+
+.blog-post {
+  border: 5px #ff8327 solid;
+  border-right: 0;
+  border-top: 0; }
+
+.text-box {
+  padding: 10%; }
+
+.text-box > h2 {
+  line-height: 100%;
+  margin-bottom: 5px; }
+
+h3 {
+  color: #ff8327;
+  margin-top: 0;
+  font-family: 'Chathura', sans-serif;
+  font-size: 5vw;
+  font-weight: bold;
+  line-height: 30%; }

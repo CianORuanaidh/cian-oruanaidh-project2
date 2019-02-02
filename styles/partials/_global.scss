@@ -55,6 +55,10 @@ a {
     flex-direction: row;
 }
 
+.row-reverse-flex {
+    flex-direction: row-reverse;
+}
+
 .v-flex {
     display: flex;
     flex-direction: column;    
@@ -75,6 +79,11 @@ a {
 p, .button-link {
     @include chathura(1.95rem, auto);
     line-height: 1.5rem;
+}
+
+p {
+    letter-spacing: 0.07rem;
+    // line-height: 1rem;
 }
 
 .bg-shadow-right {
