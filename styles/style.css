@@ -395,10 +395,65 @@ figcaption h2 {
   line-height: 100%;
   margin-bottom: 5px; }
 
-h3 {
+h3, .comment h2 {
   color: #ff8327;
   margin-top: 0;
   font-family: 'Chathura', sans-serif;
-  font-size: 5vw;
-  font-weight: bold;
+  font-size: 1.95rem;
+  font-weight: auto;
   line-height: 30%; }
+
+.comment h2 {
+  font-family: 'Chathura', sans-serif;
+  font-size: 3.5rem;
+  font-weight: auto; }
+
+.comment .text-box {
+  padding: 5%; }
+
+.comment .image-holder {
+  -ms-flex-preferred-size: 100px;
+  flex-basis: 100px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+
+form > * {
+  display: block;
+  font-family: 'Chathura', sans-serif;
+  font-size: 1.95rem;
+  font-weight: auto; }
+
+input[type='text'], input[type='email'], textarea {
+  background: #111010;
+  border: black;
+  border-bottom: 2px #ff8327 solid; }
+
+textarea {
+  color: white;
+  border: 2px #ff8327 solid;
+  width: 100%;
+  padding: 5%; }
+
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: white;
+  opacity: 1; }
+
+::-ms-input-placeholder {
+  color: white;
+  opacity: 1; }
+
+::placeholder {
+  color: white;
+  opacity: 1; }
+
+input[type='submit'] {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  color: white;
+  background: #bf2603;
+  margin: 5% 0; }

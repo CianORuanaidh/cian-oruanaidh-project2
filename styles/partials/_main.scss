@@ -109,9 +109,22 @@ figcaption h2 {
     margin-bottom: 5px;    
 }
 
-h3 {
+h3, .comment h2 {
     color: $second-color;
     margin-top: 0;
-    @include chathura(5vw, bold);
+    @include chathura(1.95rem, auto);
     line-height: 30%;
+}
+
+.comment h2 {
+    @include chathura(3.5rem, auto);
+}
+
+.comment .text-box {
+    padding: 5%;
+}
+
+.comment .image-holder {
+    flex-basis: 100px;
+    flex-shrink: 0;
 }

@@ -46,30 +46,37 @@
                     </article>
                 <div class="comments">
                     <h2>Comments:</h2>
-                    <div class="comment">
+                    <div class="comment flex">
                         <div class="image-holder"><img src="assets/comment-image-1.jpg" alt="User picture for blog post."></div>
-                        <h2>Tuesday October 9th, 2019 by Sulaire</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime distinctio corporis harum
-                            dicta alias deleniti reprehenderit, dolorum, libero ullam voluptates laudantium quaerat
-                            quam quisquam temporibus?</p>
+                        <div class="text-box">    
+                            <h2>Tuesday October 9th, 2019 by Sulaire</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime distinctio corporis harum
+                                dicta alias deleniti reprehenderit, dolorum, libero ullam voluptates laudantium quaerat
+                                quam quisquam temporibus?</p>
+                        </div>
                     </div>
-                    <div class="comment">
+                    <div class="comment flex">
                         <div class="image-holder"><img src="assets/comment-image-2.jpg" alt="User picture for blog post."></div>
-                        <h2>Wednesday October 10th, 2019 by Renzo</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo sed ducimus a vel earum
-                            distinctio deleniti rem, fugiat odio. Placeat autem recusandae voluptatibus vitae.</p>
+                        <div class="text-box">
+                            <h2>Wednesday October 10th, 2019 by Renzo</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo sed ducimus a vel earum
+                                distinctio deleniti rem, fugiat odio. Placeat autem recusandae voluptatibus vitae.</p>
+                        </div>
                     </div>
                 </div>
                 <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email">
+                    <div class="form-part-1 v-flex">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email">
+                    </div>
                     <label for="comment">Comment</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Comment"></textarea>
                     <input type="submit" value="Post Comment">
                 </form>
             </section>
+
             <aside class="push-left">
                     <div class="image-holder"><img src="assets/sidebar-image.jpg" alt="A pint being poured."></div>
                     <h2>Our mission</h2>
