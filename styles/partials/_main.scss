@@ -128,3 +128,20 @@ h3, .comment h2 {
     flex-basis: 100px;
     flex-shrink: 0;
 }
+
+.social li{
+    color: white;
+    flex-grow: 1;
+}
+
+.social {
+    width: 160px;
+    // background: tomato;
+}
+.contact p {
+    margin: 10px 0;
+}
+
+.contact p:nth-of-type(1){
+    margin: 30px 0;
+}

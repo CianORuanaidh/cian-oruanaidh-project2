@@ -4,7 +4,9 @@ form > *{
     // background: $background-color;
 }
 
-input[type='text'], input[type='email'], textarea {
+input[type='text'], 
+input[type='email'], 
+textarea {
     background: $background-color;
     border: black;
     border-bottom: 2px $second-color solid;
@@ -37,6 +39,22 @@ input[type='submit'] {
     margin: 5% 0;
 }
 
-.hello {
-    // font-display: 
+.contact + form {
+    background: $background-color-2;
+    flex-basis: 600px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 5%;
+}
+
+.contact + form textarea, 
+.contact + form input[type='text'],
+.contact + form input[type='email'] {
+    background: $background-color-2;
+}
+
+.contact + form input[type='text'], 
+.contact + form input[type='email'], 
+.contact + form textarea {
+    border-color: white;
 }
