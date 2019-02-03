@@ -145,3 +145,37 @@ h3, .comment h2 {
 .contact p:nth-of-type(1){
     margin: 30px 0;
 }
+
+figure.events {
+    // width: 100%;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.events .image-holder {
+    width: 25%;
+    // display: inline-block;
+    margin-right: 10%;
+    float: left;
+}
+
+.events figcaption {
+    width: calc(74% - 10%);
+    // display: inline-block;
+    height: 350px;
+    // padding-bottom: 10px;
+    float: left;
+}
+
+.events .button-link {
+    margin-bottom: 10px;
+    // border: 2px white solid;
+}
+
+.events h2 {
+    width: 100%;
+}
+
+.events p {
+    margin: calc(21% / 3) 0;
+}

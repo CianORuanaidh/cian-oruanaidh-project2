@@ -441,6 +441,29 @@ h3, .comment h2 {
 .contact p:nth-of-type(1) {
   margin: 30px 0; }
 
+figure.events {
+  max-width: 100%;
+  vertical-align: top; }
+
+.events .image-holder {
+  width: 25%;
+  margin-right: 10%;
+  float: left; }
+
+.events figcaption {
+  width: calc(74% - 10%);
+  height: 350px;
+  float: left; }
+
+.events .button-link {
+  margin-bottom: 10px; }
+
+.events h2 {
+  width: 100%; }
+
+.events p {
+  margin: calc(21% / 3) 0; }
+
 form > * {
   display: block;
   font-family: 'Chathura', sans-serif;
