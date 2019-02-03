@@ -154,6 +154,9 @@ a {
   color: white;
   padding: 5px; }
 
+.fty-px-left-mar {
+  margin-left: 50px; }
+
 .wrapper {
   width: 80%; }
 
@@ -194,6 +197,11 @@ a {
 .wrap {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+
+.flex-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .space-between {
   -webkit-box-pack: justify;
@@ -356,10 +364,10 @@ figure {
   max-width: 700px; }
 
 .fig-contain {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(10%, black), color-stop(10%, #220303), color-stop(90%, #220303), color-stop(90%, black), to(black));
-  background: -webkit-linear-gradient(top, black 0%, black 10%, #220303 10%, #220303 90%, black 90%, black 100%);
-  background: -o-linear-gradient(top, black 0%, black 10%, #220303 10%, #220303 90%, black 90%, black 100%);
-  background: linear-gradient(to bottom, black 0%, black 10%, #220303 10%, #220303 90%, black 90%, black 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#111010), color-stop(10%, #111010), color-stop(10%, #220303), color-stop(90%, #220303), color-stop(90%, #111010), to(#111010));
+  background: -webkit-linear-gradient(top, #111010 0%, #111010 10%, #220303 10%, #220303 90%, #111010 90%, #111010 100%);
+  background: -o-linear-gradient(top, #111010 0%, #111010 10%, #220303 10%, #220303 90%, #111010 90%, #111010 100%);
+  background: linear-gradient(to bottom, #111010 0%, #111010 10%, #220303 10%, #220303 90%, #111010 90%, #111010 100%); }
 
 figcaption h2 {
   line-height: 50%; }
@@ -445,6 +453,24 @@ textarea {
   background: #111010;
   border: black;
   border-bottom: 2px #ff8327 solid; }
+
+label {
+  display: none; }
+
+input[type='text'],
+input[type='email'] {
+  -ms-flex-preferred-size: 200px;
+  flex-basis: 200px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  color: white; }
+
+.form-part-1 input[type='text'] {
+  margin-right: 40px; }
 
 textarea {
   color: white;

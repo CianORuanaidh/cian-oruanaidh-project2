@@ -41,6 +41,9 @@ a {
     padding: 5px;
 }
 
+.fty-px-left-mar {
+    margin-left: 50px;
+}
 .wrapper {
     width: 80%;
 }
@@ -71,6 +74,14 @@ a {
 .wrap {
     flex-wrap: wrap;
 }
+
+.flex-center {
+    justify-content: center;
+}
+
+// .flex-center-aln {
+//     align-content: center;
+// }
 
 .space-between {
     justify-content: space-between;

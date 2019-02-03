@@ -59,7 +59,7 @@ figure {
 
 .fig-contain {
     // background: $background-color-2;
-    background: linear-gradient(to bottom, black 0%, black 10%, $background-color-2 10%, $background-color-2 90%,black 90% ,black 100%);
+    background: linear-gradient(to bottom, $background-color 0%, $background-color 10%, $background-color-2 10%, $background-color-2 90%, $background-color 90% ,$background-color 100%);
 }
 
 figcaption h2 {

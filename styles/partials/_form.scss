@@ -10,10 +10,28 @@ textarea {
     background: $background-color;
     border: black;
     border-bottom: 2px $second-color solid;
-    // flex-basis: 500px;
-    // flex-grow: 1;
+}
+
+// CHANGE THIS
+label {
+    display: none;
+}
+
+input[type='text'], 
+input[type='email'] {
+    // background: wheat;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    color: white;
     // flex-shrink: 0;
 }
+
+.form-part-1 input[type='text'] {
+    margin-right: 40px;
+}
+
 
 textarea {
     color: white;
