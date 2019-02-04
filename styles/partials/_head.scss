@@ -7,6 +7,7 @@ header {
 header.home {
     height: 100vh;
 }
+
 nav ul {
     color: white;
     justify-content: center;
@@ -36,7 +37,8 @@ li .page {
 }
 
 h1 {
-    @include tulpen(16vw, auto);
+    // @include tulpen(calc(1.3vw * 12), auto);
+    @include tulpen(calc(16vw), auto);
     line-height: 70%;
     color: $second-color;
     width: 27%;
@@ -58,6 +60,7 @@ h2 {
     @include chathura(5vw, bold);
     color: white;
     width: 80%;
+    // min-width: 300px;
     margin: 1% auto;
     // text-align: left;
 
@@ -67,4 +70,35 @@ footer {
     margin-top: 40px;
     text-align: center;
     // vertical-align: middle;
+}
+
+.blog-head h1, .contact-head h1 {
+    @include chathura(60px, bold);
+}
+
+// Nav
+// .nav-check::after{
+//     content: "<i class="fas fa-chevron-circle-down"></i>";
+//     width: 50px;
+//     height: 50px;
+//     background: tomato;
+//     position: absolute;
+// }
+
+label.nav-check {
+    float: left;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    // height: 80px;
+    // width: 80px;
+    font-size: 40px;
+}
+input[type='checkbox'], header ul.nav-list{
+    display: none;
+}
+
+input[type='checkbox']:checked + .nav-check + ul.nav-list {
+    color: red;
+    display: flex;
 }

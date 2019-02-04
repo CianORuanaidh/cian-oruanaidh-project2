@@ -1,9 +1,57 @@
 // Breakpoint
 // screen < 1060 
 
+@media (max-width: 1400px) {
+    .push-left.blog {
+        // background: $background-color;
+        flex-basis: 100%;
+        margin-top: 5%;
+        display: flex;
+        padding: 0 5%;
+        // flex-shrink: 1; 
+    }
+
+
+    .push-right.blog {
+        // background: lightblue;
+        // flex-basis: 100%;
+        padding-bottom: 0;
+        padding-left: 0;
+        flex-shrink: 1; 
+    }
+
+    aside {
+        background: $background-color-2;
+    }
+
+    aside .bg-shadow-right-2 {
+        box-shadow: 0px 0px 0px 0px $background-color-2;
+    }
+
+    .posts {
+        margin-left: 5%;
+    }
+
+}
+
 @media (max-width: 1060px) {
-    body {
-      background-color: lightblue;
+    // body {
+    //   background-color: lightblue;
+    // }
+
+    h1 {
+        // @include tulpen(calc(1.3vw * 12), auto);
+        @include tulpen(calc(20vw), auto);
+        // line-height: 70%;
+        // color: $second-color;
+        width: 33%;
+    }
+    
+    header h2 {
+        @include chathura(6vw, bold);
+        // line-height: 30%;
+        width: 32.5%;
+        // padding-left: 0.5%;
     }
 
     figure {
@@ -15,32 +63,136 @@
         margin-left: auto;
     }
 
-    .col-reverse-flex {
-        flex-direction: column;
-    }
+    // .col-reverse-flex {
+    //     flex-direction: column;
+    // }
 
     .events .image-holder {
         display: none
+        // width: 100%;
     }
 
     .events figcaption {
         width: 100%;
     }
 
-    .gallery ul li {
+    .gallery ul li:nth-of-type(3), {
         display: none;
     }
 
-    .gallery ul li:nth-of-type(1), .gallery ul li:nth-of-type(2) {
+    .gallery ul li {
         display: block;
+        // margin: 0 auto;
+        // width: 48%;
+    }
+    
+    .contact-page {
+        flex-direction: column-reverse;
+    }
+
+    .contact-page form {
+        margin-top: 10%;
+    }
+
+    .contact-page .social{
+        margin-top: 10%;
+        // text-align: center;
+    }
+
+    .contact ul {
         margin: 0 auto;
-        width: 50%;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    aside.blog .image-holder {
+        display: none;
     }
     
   }
 
-  @media (max-width: 600px) {
-    .gallery ul li:nth-of-type(1) {
+//   @media (min-width:1000) and (max-width:1060) {
+//     footer {
+//         background: lightblue;
+//     }  
+    
+//   }
 
+  @media (max-width: 990px ){
+    .col-reverse-flex {
+        flex-direction: column;
     }
   }
+
+  @media (max-width: 900px) {
+    .comments .comment h2, .text-box h3 {
+        line-height: 70%
+    }
+
+    .form-part-1 input[type='text'], 
+    .form-part-1 input[type='email'] {
+        flex-shrink: 1;
+        background: lightblue;
+        margin: 0 0 10px 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .gallery ul li:nth-of-type(3) {
+        display: block;
+        // width: 100%;
+        // margin: 0;
+    }
+
+    .gallery ul li {
+        // display: block;
+        // margin: 0 auto;
+        // width: 100%;
+        flex-shrink: 0;
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .gallery li:nth-child(2) {
+        margin: 10px 0;
+    }
+
+    .gallery .wrap {
+        flex-direction: column;
+    }
+
+    // .gallery ul li:nth-of-type(2) {
+    //     display: block;
+    //     width: 100%;
+    //     margin: 0;
+    // }
+
+    // .gallery ul li {
+    //     display: block;
+    //     width: 100%;
+    //     margin: 0;
+    // }    
+
+    h1 {
+        // @include tulpen(calc(1.3vw * 12), auto);
+        @include tulpen(calc(30vw), auto);
+        // line-height: 70%;
+        // color: $second-color;
+        width: 50%;
+    }
+    
+    header h2 {
+        @include chathura(10vw, bold);
+        // line-height: 30%;
+        width: 49%;
+        // padding-left: 0.5%;
+    }
+
+    .contact-page .social{
+        margin-top: 60px;
+        // text-align: center;
+    }
+
+}

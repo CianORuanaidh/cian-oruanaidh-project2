@@ -14,13 +14,13 @@ textarea {
 
 // CHANGE THIS
 label {
-    display: none;
+    // display: none;
 }
 
 input[type='text'], 
 input[type='email'] {
     // background: wheat;
-    flex-basis: 200px;
+    flex-basis: 100px;
     flex-grow: 1;
     flex-shrink: 0;
     margin-bottom: 20px;

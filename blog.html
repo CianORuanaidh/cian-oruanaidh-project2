@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="head-two v-flex space-between">
+    <header class="head-two v-flex space-between blog-head">
         <nav>
             <ul class="flex">
                 <li><a href="index.html">Home</a></li>
@@ -23,8 +23,8 @@
         <h1>Blog</h1>
     </header>
     <main>
-        <div class="wrapper-full-width flex row-reverse-flex">
-            <section class="push-right">
+        <div class="wrapper-full-width flex row-reverse-flex wrap space-between">
+            <section class="push-right blog">
                 <article class="blog-post">
                     <div class="image-holder bg-shadow-left blog-img"><img src="assets/post-image.jpg" alt="Four differnt dishes on a restaurant table."></div>
                     <div class="text-box">
@@ -77,18 +77,20 @@
                 </form>
             </section>
 
-            <aside class="push-left">
-                    <div class="image-holder"><img src="assets/sidebar-image.jpg" alt="A pint being poured."></div>
-                    <h2>Our mission</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed natus aliquid officiis! <a href="">find
-                            out more</a></p>
-                    <h2>Recent Posts</h2>
-                    <ul>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Dolor, sit amet consectetur adipisicing.</li>
-                        <li>Lorem ipsum dolor consectetur adipisicing elit. Ea provident tenetur.</li>
-                    </ul>
+            <aside class="push-left blog">
+                    <div class="image-holder bg-shadow-right-2"><img src="assets/sidebar-image.jpg" alt="A pint being poured."></div>
+                    <div class="posts bg-shadow-right-2">
+                        <h2>Our mission</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed natus aliquid officiis!<a href="">find
+                                out more</a></p>
+                        <h2>Recent Posts</h2>
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor sit.</a></li>
+                            <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                            <li><a href="">Dolor, sit amet consectetur adipisicing.</a></li>
+                            <li><a href="">Lorem ipsum dolor consectetur adipisicing elit. Ea provident tenetur.</a></li>
+                        </ul>
+                    </div>
                 </aside>
         </div>
     </main>

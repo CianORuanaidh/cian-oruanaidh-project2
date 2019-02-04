@@ -4,7 +4,7 @@ section {
 .info-box {
     // border: 1px solid white;
     // width: 50%;
-    flex: 1 0 500px;
+    flex: 1 1 500px;
     position: relative;
     padding-left: 70px;
 }
@@ -111,6 +111,11 @@ figcaption h2 {
     margin-bottom: 5px;    
 }
 
+.comments, .blog form {
+    // background: lightblue;
+    width: 90%;
+    margin: 0 auto;
+}
 h3, .comment h2 {
     color: $second-color;
     margin-top: 0;
@@ -131,17 +136,23 @@ h3, .comment h2 {
     flex-shrink: 0;
 }
 
+.social {
+    margin-top: 50%;
+    width: 160px;
+    // background: tomato;
+}
+
 .social li{
     color: white;
     flex-grow: 1;
 }
 
-.social {
-    width: 160px;
-    // background: tomato;
-}
-.contact p {
+.social p {
     margin: 10px 0;
+}
+
+.contact p {
+    margin: 5px 0;
 }
 
 .contact p:nth-of-type(1){
@@ -180,4 +191,81 @@ figure.events {
 
 .events p {
     margin: calc(21% / 3) 0;
+}
+
+.gallery li:nth-child(2) {
+    margin: 0 2%;
+}
+
+.gallery li {
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+// .banner-image {
+//     background: lightblue;
+//     min-height: 350px;
+// }
+
+// .banner-image .image-holder {
+//     width: auto;
+//     height: 100%;
+// }
+
+.push-right.blog {
+    // width: 150%;
+    // max-width: 1200px;
+    flex-basis: 1000px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.push-left.blog {
+    flex-basis: 400px;
+    flex-shrink: 1;
+}
+
+aside.blog {
+    // background: lightblue;
+    margin-top: 15%;
+}
+
+.posts {
+    background: $background-color-2;
+    margin-left: 15%;
+}
+
+.posts h2 {
+    line-height: 50%;
+    padding: 40px 30px 0 0;
+}
+
+.posts p {
+    margin: 10px 0;
+}
+
+.posts a {
+    color: $second-color;
+}
+
+.posts ul {
+    list-style: disc;
+    padding-left: 50px;
+    color: $primary-color;
+    // @include tulpen(1rem auto);
+}
+
+.posts ul li {
+    // padding-left: 15px;
+    margin: 5px 0;
+    @include chathura(1.98rem, auto);
+    line-height: 75%;
+    vertical-align: middle;
+    // padding-bottom: 10px;
+    // background: lightblue;
+}
+
+.posts ul li a {
+    color: white;
 }
