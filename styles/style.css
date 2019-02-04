@@ -319,11 +319,6 @@ section {
   position: relative;
   padding-left: 70px; }
 
-figure {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 500px;
-  flex: 1 0 500px; }
-
 .info-box .icon {
   background: #ff8327;
   border-radius: 50%;
@@ -545,3 +540,27 @@ input[type='submit'] {
 .contact + form input[type='email'],
 .contact + form textarea {
   border-color: white; }
+
+@media (max-width: 1060px) {
+  body {
+    background-color: lightblue; }
+  figure {
+    max-width: 80%;
+    margin: 0 auto; }
+  .fty-px-left-mar {
+    margin-left: auto; }
+  .col-reverse-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .events .image-holder {
+    display: none; }
+  .events figcaption {
+    width: 100%; }
+  .gallery ul li {
+    display: none; }
+  .gallery ul li:nth-of-type(1), .gallery ul li:nth-of-type(2) {
+    display: block;
+    margin: 0 auto;
+    width: 50%; } }

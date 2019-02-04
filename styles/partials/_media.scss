@@ -1,0 +1,46 @@
+// Breakpoint
+// screen < 1060 
+
+@media (max-width: 1060px) {
+    body {
+      background-color: lightblue;
+    }
+
+    figure {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .fty-px-left-mar {
+        margin-left: auto;
+    }
+
+    .col-reverse-flex {
+        flex-direction: column;
+    }
+
+    .events .image-holder {
+        display: none
+    }
+
+    .events figcaption {
+        width: 100%;
+    }
+
+    .gallery ul li {
+        display: none;
+    }
+
+    .gallery ul li:nth-of-type(1), .gallery ul li:nth-of-type(2) {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+  }
+
+  @media (max-width: 600px) {
+    .gallery ul li:nth-of-type(1) {
+
+    }
+  }
