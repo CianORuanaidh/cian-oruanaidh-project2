@@ -240,6 +240,30 @@ p {
 .button-link a {
   padding: 10px; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black; }
+
+.skip-link:focus {
+  left: 0; }
+
 header {
   background: black;
   background: url("../assets/home-image-1.jpg");
@@ -695,7 +719,16 @@ input[type='submit'] {
     -ms-flex-negative: 1;
     flex-shrink: 1;
     background: lightblue;
-    margin: 0 0 10px 0; } }
+    margin: 0 0 10px 0; }
+  .info-box .icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+    top: 45px;
+    padding: 6px; }
+  .info-box {
+    padding-left: 40px; } }
 
 @media (max-width: 600px) {
   .gallery ul li:nth-of-type(3) {
@@ -714,6 +747,8 @@ input[type='submit'] {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  header {
+    height: 40vh; }
   h1 {
     font-family: 'Tulpen One', cursive;
     font-size: calc(30vw);
@@ -794,6 +829,8 @@ input[type='submit'] {
     transition: -webkit-transform 0.5s;
     -o-transition: transform 0.5s;
     transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s; } }
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+  .hero {
+    height: calc(100%); } }
 
 /*# sourceMappingURL=style.css.map */

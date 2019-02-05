@@ -137,6 +137,24 @@
         background: lightblue;
         margin: 0 0 10px 0;
     }
+
+    .info-box .icon {
+        // background: $second-color;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 0.75rem;
+        // padding: 2%;
+        // position: absolute;
+        top: 45px;
+        // left: 0;
+        padding: 6px;
+    }
+
+    .info-box {
+        padding-left: 40px;
+    }
+
   }
 
   @media (max-width: 600px) {
@@ -174,6 +192,13 @@
     //     width: 100%;
     //     margin: 0;
     // }    
+
+
+    header {
+        // background: black;
+        // background: url('../assets/home-image-1.jpg');
+        height: 40vh;
+    }
 
     h1 {
         // @include tulpen(calc(1.3vw * 12), auto);
@@ -213,7 +238,7 @@
     nav .nav-list {
         flex-direction: column;
     }
-// THIS
+
     label.nav-check {
         display: block;
     }
@@ -269,5 +294,14 @@
         -webkit-transition: transform 0.5s; /* Safari */
         transition: transform 0.5s;
     }
+
+    .hero {
+        // flex-direction: column;
+        // justify-content: center;
+        // margin: 0 auto;
+        height: calc(100%);
+    }
+
+    .hero {}
 
 }
