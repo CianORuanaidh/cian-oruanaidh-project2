@@ -85,44 +85,52 @@ footer {
 //     position: absolute;
 // }
 
-label.nav-check {
-    float: left;
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    // height: 80px;
-    // width: 80px;
-    font-size: 40px;
-}
-
-input[type='checkbox'], header ul.nav-list{
+label.nav-check, #nav-toggle {
     display: none;
 }
 
-input[type='checkbox']:checked + .nav-check + ul.nav-list {
-    color: red;
-    display: flex;
-}
+// label.nav-check {
+//     float: left;
+//     position: absolute;
+//     left: 30px;
+//     top: 30px;
+//     // height: 80px;
+//     // width: 80px;
+//     font-size: 40px;
+//     -ms-transform: rotate(-90deg); /* IE 9 */
+//     -webkit-transform: rotate(-90deg); /* Safari */
+//     transform: rotate(-90deg);
+// }
 
-input[type='checkbox']:checked + label.nav-check {
-    // color: tomato;
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg);
-    // left: -35px;
-}
+// input[type='checkbox'], header ul.nav-list{
+//     display: none;
+// }
 
-input[type='checkbox']:checked + label.nav-check {
-    -webkit-transition: transform 0.5s; /* Safari */
-    transition: transform 0.5s;
-    // -webkit-transition-delay: 0.1s; /* Safari */
-    // transition-delay: 0.1s;
-    // -webkit-transition: left 0.5s; /* Safari */
-    // transition: left 0.5s;
+// input[type='checkbox']:checked + .nav-check + ul.nav-list {
+//     color: red;
+//     display: flex;
+// }
+
+// input[type='checkbox']:checked + label.nav-check {
+//     // color: tomato;
+//     -ms-transform: rotate(0deg); /* IE 9 */
+//     -webkit-transform: rotate(0deg); /* Safari */
+//     transform: rotate(0deg);
+//     // left: -35px;
+// }
+
+// input[type='checkbox']:checked + label.nav-check {
+//     -webkit-transition: transform 0.5s; /* Safari */
+//     transition: transform 0.5s;
+//     // -webkit-transition-delay: 0.1s; /* Safari */
+//     // transition-delay: 0.1s;
+//     // -webkit-transition: left 0.5s; /* Safari */
+//     // transition: left 0.5s;
     
-}
+// }
 
-input[type='checkbox'] + label.nav-check {
-    -webkit-transition: transform 0.5s; /* Safari */
-    transition: transform 0.5s;
-}
+// input[type='checkbox'] + label.nav-check {
+//     -webkit-transition: transform 0.5s; /* Safari */
+//     transition: transform 0.5s;
+// }
+
