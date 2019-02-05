@@ -1,7 +1,6 @@
 form > *{
     display: block;
     @include chathura(1.95rem, auto);
-    // background: $background-color;
 }
 
 input[type='text'], 
@@ -12,20 +11,13 @@ textarea {
     border-bottom: 2px $second-color solid;
 }
 
-// CHANGE THIS
-label {
-    // display: none;
-}
-
 input[type='text'], 
 input[type='email'] {
-    // background: wheat;
     flex-basis: 100px;
     flex-grow: 1;
     flex-shrink: 0;
     margin-bottom: 20px;
     color: white;
-    // flex-shrink: 0;
 }
 
 .form-part-1 input[type='text'] {
@@ -38,14 +30,11 @@ textarea {
     border: 2px $second-color solid;
     width: 100%;
     padding: 5%;
-    // height: 4rem;
-    // width: 50rem;
 }
 
 ::placeholder {
     color: white;
     opacity: 1;
-    // font-size: 1.5em;
   }
 
 input[type='submit'] {
@@ -55,6 +44,15 @@ input[type='submit'] {
     color: white;
     background: $primary-color;
     margin: 5% 0;
+}
+
+input[type='submit']:hover {
+    background: $second-color;
+    transition: background-color 0.75s;
+}
+
+input[type='submit']:hover {
+    transition: background-color 0.75s;
 }
 
 .contact + form {

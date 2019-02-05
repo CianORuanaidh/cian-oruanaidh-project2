@@ -36,12 +36,6 @@ img {
     width: 100%;
 }
 
- .image-holder {
-    // flex-basis: 300px;
-    // flex-grow: 1;
-    // background: white;
- }
-
 a {
     text-decoration: none;
     color: white;
@@ -86,10 +80,6 @@ a {
     justify-content: center;
 }
 
-// .flex-center-aln {
-//     align-content: center;
-// }
-
 .space-between {
     justify-content: space-between;
 }
@@ -101,7 +91,6 @@ p, .button-link {
 
 p {
     letter-spacing: 0.07rem;
-    // line-height: 1rem;
 }
 
 .bg-shadow-right {
@@ -117,12 +106,28 @@ p {
 }
 
 .button-link {
-    background: $second-color;
+    background: $primary-color;
     text-transform: capitalize;
     width: 200px;
     text-align: center;
     padding: 10px;
     display: inline-block;
+}
+
+.button-link:hover {
+    background: white;
+}
+
+.button-link a:hover {
+    color: $background-color;
+}
+
+.button-link:hover {
+    transition: background-color 0.5s;
+}
+
+.button-link a:hover {
+    transition: color 0.5s;
 }
 
 .button-link a {

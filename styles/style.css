@@ -230,12 +230,28 @@ p {
   box-shadow: -20px 20px 0px 0px #ff8327; }
 
 .button-link {
-  background: #ff8327;
+  background: #bf2603;
   text-transform: capitalize;
   width: 200px;
   text-align: center;
   padding: 10px;
   display: inline-block; }
+
+.button-link:hover {
+  background: white; }
+
+.button-link a:hover {
+  color: #111010; }
+
+.button-link:hover {
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+.button-link a:hover {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s; }
 
 .button-link a {
   padding: 10px; }
@@ -285,6 +301,20 @@ nav ul {
 
 nav li {
   padding: 0 10px; }
+
+nav a:hover {
+  color: #bf2603;
+  font-size: 120%; }
+
+nav a:hover {
+  -webkit-transition: font-size 0.5s;
+  -o-transition: font-size 0.5s;
+  transition: font-size 0.5s; }
+
+nav a {
+  -webkit-transition: font-size 0.5s;
+  -o-transition: font-size 0.5s;
+  transition: font-size 0.5s; }
 
 nav li:nth-of-type(3) {
   font-family: 'Tulpen One', cursive;
@@ -339,7 +369,7 @@ footer {
 
 .blog-head h1, .contact-head h1 {
   font-family: 'Chathura', sans-serif;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bold; }
 
 label.nav-check, #nav-toggle {
@@ -356,7 +386,7 @@ section {
   padding-left: 70px; }
 
 .info-box .icon {
-  background: #ff8327;
+  background: #bf2603;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -366,6 +396,23 @@ section {
   left: 0;
   padding: 12px; }
 
+.info-box h2 {
+  line-height: 50%;
+  padding-top: 40px; }
+
+.info-box a:hover, .fig-contain a:hover {
+  color: #ff8327; }
+
+.info-box a:hover, .fig-contain a:hover {
+  -webkit-transition: color 0.75s;
+  -o-transition: color 0.75s;
+  transition: color 0.75s; }
+
+.info-box a, .fig-contain a {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s; }
+
 main h2 {
   font-family: 'Chathura', sans-serif;
   font-size: 3.5rem;
@@ -373,7 +420,7 @@ main h2 {
 
 .host {
   text-align: center;
-  padding: 100px 0; }
+  padding: 7% 0; }
 
 .host h2 {
   color: #ff8327; }
@@ -427,6 +474,18 @@ figcaption h2 {
   border: 5px #ff8327 solid;
   border-right: 0;
   border-top: 0; }
+
+.blog .posts a:hover {
+  color: #ff8327;
+  font-size: 120%; }
+
+.blog .posts a:hover {
+  -webkit-transition-property: color, font-size;
+  -o-transition-property: color, font-size;
+  transition-property: color, font-size;
+  -webkit-transition-duration: .75s;
+  -o-transition-duration: .75s;
+  transition-duration: .75s; }
 
 .text-box {
   padding: 10%; }
@@ -498,6 +557,7 @@ figure.events {
   margin-bottom: 10px; }
 
 .events h2 {
+  color: #ff8327;
   width: 100%; }
 
 .events p {
@@ -621,6 +681,17 @@ input[type='submit'] {
   background: #bf2603;
   margin: 5% 0; }
 
+input[type='submit']:hover {
+  background: #ff8327;
+  -webkit-transition: background-color 0.75s;
+  -o-transition: background-color 0.75s;
+  transition: background-color 0.75s; }
+
+input[type='submit']:hover {
+  -webkit-transition: background-color 0.75s;
+  -o-transition: background-color 0.75s;
+  transition: background-color 0.75s; }
+
 .contact + form {
   background: #220303;
   -ms-flex-preferred-size: 600px;
@@ -712,13 +783,34 @@ input[type='submit'] {
     flex-direction: column; } }
 
 @media (max-width: 900px) {
+  .wrapper {
+    width: 90%; }
+  .bg-shadow-right {
+    -webkit-box-shadow: 15px 15px 0px 0px #ff8327;
+    box-shadow: 15px 15px 0px 0px #ff8327; }
+  .bg-shadow-right-2 {
+    -webkit-box-shadow: 15px 15px 0px 0px #220303;
+    box-shadow: 15px 15px 0px 0px #220303; }
+  .bg-shadow-left {
+    -webkit-box-shadow: -15px 15px 0px 0px #ff8327;
+    box-shadow: -15px 15px 0px 0px #ff8327; }
   .comments .comment h2, .text-box h3 {
     line-height: 70%; }
+  .comment.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .comment.flex .image-holder {
+    width: 100px; }
+  .comment.flex .text-box {
+    padding: 5% 0; }
+  .blog-post .text-box {
+    padding: 10% 5%; }
   .form-part-1 input[type='text'],
   .form-part-1 input[type='email'] {
     -ms-flex-negative: 1;
     flex-shrink: 1;
-    background: lightblue;
     margin: 0 0 10px 0; }
   .info-box .icon {
     border-radius: 50%;
@@ -731,6 +823,15 @@ input[type='submit'] {
     padding-left: 40px; } }
 
 @media (max-width: 600px) {
+  .bg-shadow-right {
+    -webkit-box-shadow: 10px 10px 0px 0px #ff8327;
+    box-shadow: 10px 10px 0px 0px #ff8327; }
+  .bg-shadow-right-2 {
+    -webkit-box-shadow: 10px 10px 0px 0px #220303;
+    box-shadow: 10px 10px 0px 0px #220303; }
+  .bg-shadow-left {
+    -webkit-box-shadow: -10px 10px 0px 0px #ff8327;
+    box-shadow: -10px 10px 0px 0px #ff8327; }
   .gallery ul li:nth-of-type(3) {
     display: block; }
   .gallery ul li {
@@ -792,10 +893,8 @@ input[type='submit'] {
     left: 30px;
     top: 30px;
     font-size: 40px;
-    -ms-transform: rotate(-90deg);
-    /* IE 9 */
     -webkit-transform: rotate(-90deg);
-    /* Safari */
+    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg); }
   input[type='checkbox'], header ul.nav-list {
     position: absolute;
@@ -805,26 +904,24 @@ input[type='submit'] {
     position: absolute;
     top: 10px;
     -webkit-transition: top 0.65s;
+    -o-transition: top 0.65s;
+    transition: top 0.65s; }
+  input[type='checkbox'] + .nav-check + ul.nav-list {
+    -webkit-transition: top 0.65s;
     /* Safari */
     -o-transition: top 0.65s;
     transition: top 0.65s; }
   input[type='checkbox']:checked + label.nav-check {
-    -ms-transform: rotate(0deg);
-    /* IE 9 */
     -webkit-transform: rotate(0deg);
-    /* Safari */
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
   input[type='checkbox']:checked + label.nav-check {
-    -webkit-transition: transform 0.5s;
-    /* Safari */
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
     -o-transition: transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s; }
   input[type='checkbox'] + label.nav-check {
-    -webkit-transition: transform 0.5s;
-    /* Safari */
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
     -o-transition: transform 0.5s;

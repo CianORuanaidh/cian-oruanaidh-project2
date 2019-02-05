@@ -20,8 +20,21 @@ nav li {
     padding: 0 10px;
 }
 
+nav a:hover {
+    color: $primary-color;
+    font-size: 120%;
+}
+
+nav a:hover {
+    transition: font-size 0.5s;
+}
+
+nav a {
+    transition: font-size 0.5s;
+}
+
+
 nav li:nth-of-type(3) {
-    // font-size: 3rem;
     @include tulpen(3rem, auto)
 }
 
@@ -37,7 +50,6 @@ li .page {
 }
 
 h1 {
-    // @include tulpen(calc(1.3vw * 12), auto);
     @include tulpen(calc(16vw), auto);
     line-height: 70%;
     color: $second-color;
@@ -60,20 +72,17 @@ h2 {
     @include chathura(5vw, bold);
     color: white;
     width: 80%;
-    // min-width: 300px;
     margin: 1% auto;
-    // text-align: left;
 
 }
 
 footer {
     margin-top: 40px;
     text-align: center;
-    // vertical-align: middle;
 }
 
 .blog-head h1, .contact-head h1 {
-    @include chathura(60px, bold);
+    @include chathura(80px, bold);
 }
 
 label.nav-check, #nav-toggle {

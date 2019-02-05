@@ -2,26 +2,38 @@ section {
     padding: 50px 0;
 }
 .info-box {
-    // border: 1px solid white;
-    // width: 50%;
     flex: 1 1 500px;
     position: relative;
     padding-left: 70px;
 }
 
-
-
 .info-box .icon {
-    background: $second-color;
+    background: $primary-color;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     font-size: 1.5rem;
-    // padding: 2%;
     position: absolute;
     top: 30px;
     left: 0;
     padding: 12px;
+}
+
+.info-box h2 {
+    line-height: 50%;
+    padding-top: 40px;
+}
+
+.info-box a:hover, .fig-contain a:hover {
+    color: $second-color;
+}
+
+.info-box a:hover, .fig-contain a:hover {
+    transition: color 0.75s;
+}
+
+.info-box a, .fig-contain a {
+    transition: color 0.5s;
 }
 
 main h2 {
@@ -30,7 +42,7 @@ main h2 {
 
 .host {
     text-align: center;
-    padding: 100px 0;
+    padding: 7% 0;
 }
 
 .host h2 {
@@ -42,42 +54,29 @@ main h2 {
 }
 
 .four-part-grid {
-    // background: white;
     flex: 0 1 700px;
 }
 
-// figure {
-//     flex: 1 0 500px;
-// }
-
 figure {
-    // width: 40%;
     flex-basis: 500px;
     flex-grow: 1;
-    // flex-shrink: 0;
     max-width: 700px;
-    // min-width: 500px;
 }
 
 .fig-contain {
-    // background: $background-color-2;
     background: linear-gradient(to bottom, $background-color 0%, $background-color 10%, $background-color-2 10%, $background-color-2 90%, $background-color 90% ,$background-color 100%);
 }
 
 figcaption h2 {
-    // margin: 0;
     line-height: 50%;
 }
 
 .fig-contain figure:nth-of-type(1) figcaption {
-    // background: tomato;
     text-align: right;
     padding: 15% 0 15% 15%;
 }
 
 .fig-contain figure:nth-of-type(2) figcaption {
-    // background: white;
-    // text-align: right;
     padding: 15% 15% 15% 0;
 }
 
@@ -102,6 +101,16 @@ figcaption h2 {
     border-top: 0;
 }
 
+.blog .posts a:hover {
+    color: $second-color;
+    font-size: 120%;
+}
+
+.blog .posts a:hover {
+    transition-property: color, font-size;
+    transition-duration: .75s;
+}
+
 .text-box {
     padding: 10%;
 }
@@ -112,7 +121,6 @@ figcaption h2 {
 }
 
 .comments, .blog form {
-    // background: lightblue;
     width: 90%;
     margin: 0 auto;
 }
@@ -139,7 +147,6 @@ h3, .comment h2 {
 .social {
     margin-top: 50%;
     width: 160px;
-    // background: tomato;
 }
 
 .social li{
@@ -160,32 +167,28 @@ h3, .comment h2 {
 }
 
 figure.events {
-    // width: 100%;
     max-width: 100%;
     vertical-align: top;
 }
 
 .events .image-holder {
     width: 25%;
-    // display: inline-block;
     margin-right: 10%;
     float: left;
 }
 
 .events figcaption {
     width: calc(74% - 10%);
-    // display: inline-block;
     height: 350px;
-    // padding-bottom: 10px;
     float: left;
 }
 
 .events .button-link {
     margin-bottom: 10px;
-    // border: 2px white solid;
 }
 
 .events h2 {
+    color: $second-color;
     width: 100%;
 }
 
@@ -203,19 +206,8 @@ figure.events {
     flex-shrink: 1;
 }
 
-// .banner-image {
-//     background: lightblue;
-//     min-height: 350px;
-// }
-
-// .banner-image .image-holder {
-//     width: auto;
-//     height: 100%;
-// }
 
 .push-right.blog {
-    // width: 150%;
-    // max-width: 1200px;
     flex-basis: 1000px;
     flex-grow: 1;
     flex-shrink: 0;
@@ -227,7 +219,6 @@ figure.events {
 }
 
 aside.blog {
-    // background: lightblue;
     margin-top: 15%;
 }
 
@@ -253,17 +244,13 @@ aside.blog {
     list-style: disc;
     padding-left: 50px;
     color: $primary-color;
-    // @include tulpen(1rem auto);
 }
 
 .posts ul li {
-    // padding-left: 15px;
     margin: 5px 0;
     @include chathura(1.98rem, auto);
     line-height: 75%;
     vertical-align: middle;
-    // padding-bottom: 10px;
-    // background: lightblue;
 }
 
 .posts ul li a {
