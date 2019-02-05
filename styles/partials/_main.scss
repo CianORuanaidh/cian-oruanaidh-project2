@@ -1,6 +1,4 @@
-section {
-    padding: 50px 0;
-}
+// home info-box styles
 .info-box {
     flex: 1 1 500px;
     position: relative;
@@ -36,10 +34,11 @@ section {
     transition: color 0.5s;
 }
 
-main h2 {
-    @include chathura(3.5rem, bold)
+section {
+    padding: 50px 0;
 }
 
+// home host section styles
 .host {
     text-align: center;
     padding: 7% 0;
@@ -52,6 +51,54 @@ main h2 {
 .host .button-link {
     margin: 0 auto;
 }
+
+// home events section
+figure.events {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.events .image-holder {
+    width: 25%;
+    margin-right: 10%;
+    float: left;
+}
+
+.events figcaption {
+    width: calc(74% - 10%);
+    height: 350px;
+    float: left;
+}
+
+.events .button-link {
+    margin-bottom: 10px;
+}
+
+.events h2 {
+    color: $second-color;
+    width: 100%;
+}
+
+.events p {
+    margin: calc(21% / 3) 0;
+}
+
+//  section, figure, generic styles
+main h2 {
+    @include chathura(3.5rem, bold)
+}
+
+// home gallery section styles
+.gallery li:nth-child(2) {
+    margin: 0 2%;
+}
+
+.gallery li {
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
 
 .four-part-grid {
     flex: 0 1 700px;
@@ -82,12 +129,14 @@ figcaption h2 {
 
 .push-right {
     padding: 0 0 15% 2.5%;
+    margin: -100px 0 0 0;
 }
 
 .push-left {
     padding: 0 2.5% 15% 0;
 }
 
+// blog styles
 .blog-img {
     margin-left: 18px;
 }
@@ -120,93 +169,7 @@ figcaption h2 {
     margin-bottom: 5px;    
 }
 
-.comments, .blog form {
-    width: 90%;
-    margin: 0 auto;
-}
-h3, .comment h2 {
-    color: $second-color;
-    margin-top: 0;
-    @include chathura(1.95rem, auto);
-    line-height: 30%;
-}
-
-.comment h2 {
-    @include chathura(3.5rem, auto);
-}
-
-.comment .text-box {
-    padding: 5%;
-}
-
-.comment .image-holder {
-    flex-basis: 100px;
-    flex-shrink: 0;
-}
-
-.social {
-    margin-top: 50%;
-    width: 160px;
-}
-
-.social li{
-    color: white;
-    flex-grow: 1;
-}
-
-.social p {
-    margin: 10px 0;
-}
-
-.contact p {
-    margin: 5px 0;
-}
-
-.contact p:nth-of-type(1){
-    margin: 30px 0;
-}
-
-figure.events {
-    max-width: 100%;
-    vertical-align: top;
-}
-
-.events .image-holder {
-    width: 25%;
-    margin-right: 10%;
-    float: left;
-}
-
-.events figcaption {
-    width: calc(74% - 10%);
-    height: 350px;
-    float: left;
-}
-
-.events .button-link {
-    margin-bottom: 10px;
-}
-
-.events h2 {
-    color: $second-color;
-    width: 100%;
-}
-
-.events p {
-    margin: calc(21% / 3) 0;
-}
-
-.gallery li:nth-child(2) {
-    margin: 0 2%;
-}
-
-.gallery li {
-    flex-basis: 100px;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-
+// blog styles
 .push-right.blog {
     flex-basis: 1000px;
     flex-grow: 1;
@@ -255,4 +218,87 @@ aside.blog {
 
 .posts ul li a {
     color: white;
+}
+
+// blog comments styles
+.comments, .blog form {
+    width: 90%;
+    margin: 0 auto;
+}
+h3, .comment h2 {
+    color: $second-color;
+    margin-top: 0;
+    @include chathura(1.95rem, auto);
+    line-height: 30%;
+}
+
+.comment h2 {
+    @include chathura(3.5rem, auto);
+}
+
+.comment .text-box {
+    padding: 5%;
+}
+
+.comment .image-holder {
+    flex-basis: 100px;
+    flex-shrink: 0;
+}
+
+// contact and social section styles
+.social {
+    margin-top: 50%;
+    width: 160px;
+}
+
+.social li{
+    color: white;
+    flex-grow: 1;
+    transition: transform 0.5s;
+}
+
+.social li:hover {
+    font-size: 200%;
+    transform: rotate(360deg);
+}
+
+.social li:hover {
+    transition: transform 0.5s;
+}
+
+.social li a:hover {
+    color: $second-color;
+}
+
+.social li a:hover {
+    transition: color 0.5s;
+}
+
+.social li a {
+    transition: color 0.5s;
+}
+
+
+.social p {
+    margin: 10px 0;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.contact p:nth-of-type(1){
+    margin: 30px 0;
+}
+
+// footer styles
+footer {
+    margin-top: 40px;
+    text-align: center;
+    background: #333;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
 }

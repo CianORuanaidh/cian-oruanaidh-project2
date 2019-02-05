@@ -1,10 +1,11 @@
+// colour variabes
 $background-color: #111010;
 $background-color-2: #220303;
 $highlight-color: #ffffff;
 $primary-color: #bf2603;
 $second-color: #ff8327;
 
-
+// mixins for fonts
 @mixin chathura($size-value, $weight-value) {
     font-family: 'Chathura', sans-serif;
     font-size: $size-value;
@@ -17,6 +18,7 @@ $second-color: #ff8327;
     font-weight: $weight-value;
 }
 
+// general setup styles
 html {
     font-size: 125%;
 }
@@ -24,6 +26,16 @@ html {
 body {
     background: $background-color;
     color: $highlight-color;
+}
+
+.wrapper {
+    width: 80%;
+}
+
+.wrapper, .wrapper-full-width {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
 }
 
 ul {
@@ -45,15 +57,38 @@ a {
 .fty-px-left-mar {
     margin-left: 50px;
 }
-.wrapper {
-    width: 80%;
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
 }
 
-.wrapper, .wrapper-full-width {
-    max-width: 1600px;
-    margin: 0 auto;
+.skip-link:focus {
+    left: 0;
 }
 
+main {
+    position: relative;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+// flex class styles
 .flex {
     display: flex;
     flex-direction: row;
@@ -84,15 +119,7 @@ a {
     justify-content: space-between;
 }
 
-p, .button-link {
-    @include chathura(1.95rem, auto);
-    line-height: 1.5rem;
-}
-
-p {
-    letter-spacing: 0.07rem;
-}
-
+// shadow-box styles
 .bg-shadow-right {
     box-shadow: 20px 20px 0px 0px $second-color;
 }
@@ -103,6 +130,16 @@ p {
 
 .bg-shadow-left {
     box-shadow: -20px 20px 0px 0px $second-color;
+}
+
+// paragraph and button link styles
+p {
+    letter-spacing: 0.07rem;
+}
+
+p, .button-link {
+    @include chathura(1.95rem, auto);
+    line-height: 1.5rem;
 }
 
 .button-link {
@@ -134,28 +171,6 @@ p {
     padding: 10px;
 }
 
-.visuallyhidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
 
-.skip-link {
-    position: absolute;
-    left: -1000px;
-    top: 5px;
-    z-index: 999;
-    background: white;
-    color: black;
-}
 
-.skip-link:focus {
-    left: 0;
-}
+
